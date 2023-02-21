@@ -14,6 +14,8 @@ app.use((req, res, next) => {
 });
 
 //Rutes
-var chat_routes = requires("./routes/chat")
+var chat_routes = require("./routes/chat")
 
 app.use("/", chat_routes)
+
+module.exports = app;
